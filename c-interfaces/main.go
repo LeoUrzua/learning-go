@@ -4,6 +4,8 @@ import "fmt"
 
 type bot interface {
 	getGreeting() string
+	//getBotVersion() float64
+	//respondToUser(user) string
 }
 
 type englishBot struct {}
