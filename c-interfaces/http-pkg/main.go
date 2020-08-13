@@ -11,5 +11,7 @@ func main(){
 		fmt.Println("Error", err)
 	}
 
-	fmt.Println(resp)
+	bs := make([]byte, 99999) /// the second number creates an space of that number of elements
+	resp.Body.Read(bs)
+	fmt.Println(string(bs))
 }
